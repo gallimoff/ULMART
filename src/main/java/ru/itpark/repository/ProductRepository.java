@@ -16,7 +16,7 @@ public class ProductRepository {
     }
 
     public boolean delete(int id) {
-        return products.removeIf(abstractProduct -> abstractProduct.getId() == id);
+        return products.removeIf(product -> product.getId() == id);
     }
 
     public Collection<AbstractProduct> getAll() {
